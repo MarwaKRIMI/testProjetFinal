@@ -8,7 +8,12 @@ import LogIn from "./LoginInterface/login";
 import HomeAdmin from './AdminInterfaces/HomePageAdmin'
 import HomeUser from './UserInterfaces/HomePageUser'
 import SignUp from "./SignUpInterface/signup";
-import ExploreClub from "./ExploreClub"
+import ExploreClubPeinture from "./ExploreClubPeinture"
+import ExploreClubMusic from "./ExploreClubMusic"
+import ExploreClubAerobic from "./ExploreClubAerobic"
+import ExploreClubGymnastic from "./ExploreClubGymnastic"
+import ExploreClubBasket from "./ExploreClubBasket"
+import ExploreClubInformatique from "./ExploreClubInformatique";
 class Routes extends React.Component {
   render() {
     return (
@@ -34,7 +39,7 @@ class Routes extends React.Component {
           render={props => <EditProduct name={props.match.params.name} />}
         />
         <Route exact path="/add-product" component={AddProduct} />
-        <Route exact path="/explore-club/:name" component={ExploreClub}/>
+        <Route exact path="/explore-club/:name" component={ExploreClubInformatique}/>
       </div>
     );
   }
